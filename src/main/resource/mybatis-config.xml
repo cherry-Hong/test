@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+    <!-- 按驼峰式命名的字段 与bean 对象的属性一致，不需要起别名 -->
+    <setting name="mapUnderscoreToCamelCase" value="true"/>
+
+    <!-- 在传入null时，考虑到有些数据库不支持OTHER -->
+    <setting name="jdbcTypeForNull" value="NULL"></setting>
+
+    <!--延迟加载lazyLoadingEnabled 默认是true,避免版本更新带来的问题，需显示配置 -->
+    <setting name="lazyLoadingEnabled" value="true"></setting>
+    <!--aggressiveLazyLoading 入侵延迟加载。默认是true，就是直接就装配好
+       false 按需加载 ,需要有lazyLoadingEnabled 一起配置
+     -->
+    <setting name="aggressiveLazyLoading" value="false"></setting>
+    <!-- 显示配置二级缓存-->
+    <setting name="cacheEnabled" value="true"></setting>
+
+</settings>
+
+
+
+
+
+
+
+
+    <!--<mappers>-->
+        <!--<package name="com.study.java.bean.dao"></package>-->
+    <!--</mappers>-->
+
+
+
+
+
+
+</configuration>
